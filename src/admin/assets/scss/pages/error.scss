@@ -1,0 +1,40 @@
+.error-page {
+    align-items: $__center;
+    color: $__plum__black;
+    display: $__flex;
+    .main-wrapper {
+	    height: $__auto;
+	    width: $__full__width;
+		min-height: $__unset;
+		@extend %equal-heights;
+	    @extend %justify-content-center;
+	}
+}
+.error-box {
+    max-width: 480px;
+    text-align: $__center;
+    width: $__full__width;
+    @include margin-padding(0 auto, 1.875rem 0);
+    h1 {
+	    color: $__primarycolor;
+	    font-size: 10em;
+	    @include respond-below(custom767) {
+	    	font-size: 6em;
+	    }
+	}
+	p {
+	    margin-bottom: 1.875rem;
+	}
+	.btn {
+	    font-size: $__font__size__18;
+	    font-weight: $__semibold;
+	    min-width: 200px;
+	    @include rounded(50px);
+	    @include margin-padding(null, 10px 20px);
+	    @include respond-below(custom767) {
+	    	font-size: $__font__size__15;
+			min-width: 150px;
+			@include margin-padding(null, 8px 20px);
+	    }
+	}
+}

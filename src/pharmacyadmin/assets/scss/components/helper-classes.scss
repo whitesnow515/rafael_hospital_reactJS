@@ -1,0 +1,16 @@
+.block {
+	display: $__block !important;
+}
+.cal-icon {
+	position: $__relative;
+	width: $__full__width;
+	&:after {
+		color: $__ligt__carbon;
+		content: "\f073";
+		display: $__block;
+		font-family: "FontAwesome";
+	    font-size: $__font__size__15;
+	    margin: $__auto;
+	    @include position($__absolute, 10px, 15px, null, null);
+	}
+}

@@ -1,0 +1,81 @@
+.dash-widget-icon {
+    display: $__inline__flex;
+    font-size: $__font__size__30;
+    height: 50px;
+    line-height: 48px;
+    text-align: $__center;
+    width: 50px;
+	border: 3px solid;
+    @include rounded(50px);
+    @extend %justify-content-center;
+    @extend %align-items-center;
+    @include margin-padding(null, 28px);
+    h3 {
+        margin-bottom: 10px;
+    }
+}
+.dash-count {
+    font-size: $__font__size__18;
+    margin-left: $__auto;
+    @include respond-below(custom767) {
+        font-size: $__font__size__16;
+    }
+}
+.dash-widget-header {
+    align-items: $__center;
+    display: $__flex;
+    margin-bottom: 15px;
+}
+.card-chart {
+    .card-body {
+        @include margin-padding(null, 8px);
+        @include respond-below(custom575) {
+            @include margin-padding(null, 5px);
+        }
+    }
+}
+#morrisArea{
+    > svg, #morrisLine > svg  {
+        width: $__full__width;
+    }
+}
+.activity-feed {
+    list-style: $__none;
+    margin-bottom: 0;
+    margin-left: 5px;
+    @include margin-padding(null, 0);
+    .feed-item {
+        border-left: 2px solid $__gray__opaque;
+        padding-bottom: 19px;
+        padding-left: 20px;
+        position: $__relative;
+        &:last-child {
+            border-color: $__transparent;
+            padding-bottom: 0;
+        }
+        &:after {
+            content: "";
+            display: $__block;
+            width: 12px;
+            height: 12px;
+            background-color: $__dodger__blue;
+            @include rounded(50%);
+            @include position($__absolute, 0, null, null, -7px);
+        }
+        .feed-date {
+            display: $__block;
+            position: $__relative;
+            color: $__dark__battle__gary;
+            text-transform: $__uppercase;
+            font-size: $__font__size__13;
+        }
+        .feed-text {
+            color: $__dark__battle__gary;
+            position: $__relative;
+            a {
+                color: $__gray;
+                font-weight: $__semibold;
+            }
+        }
+    }
+}

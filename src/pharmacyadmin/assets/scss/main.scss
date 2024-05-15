@@ -1,0 +1,37 @@
+/****** UTILS ******/
+@import "utils/variables";
+@import "utils/mixins";
+
+/******* BASE *******/
+@import "base/reset";
+@import "base/typography";
+@import "base/colors"; 
+@import "base/base";
+@import "base/grid";
+
+/******* COMPONENTS ******/
+@import "components/button";
+@import "components/nav-tabs";
+@import "components/avatar";
+@import "components/bootstrap-classes";
+@import "components/helper-classes";
+@import "components/nav-tabs";
+@import "components/select2";
+@import "components/table";
+
+/****** LAYOUT ******/
+@import "layout/content";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sidebar";
+
+/****** PAGES ******/
+@import "pages/dashboard";
+@import "pages/calendar";
+@import "pages/components";
+@import "pages/error";
+@import "pages/inbox";
+@import "pages/invoice";
+@import "pages/login";
+@import "pages/notifications";
+@import "pages/profile";

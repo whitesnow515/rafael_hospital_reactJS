@@ -1,0 +1,76 @@
+.add-btn {
+    border: 1px solid $__transparent;
+    color: $__light__smokey-gray;
+    display: $__inline__block;
+    border-radius: 20px;
+    @include margin-padding(null, .375rem .75rem);
+    @include respond-below(custom479) {
+    	font-size: $__font__size__14;
+		@include margin-padding(null, 6px 7px);
+    }
+    &:focus, &:active, &:hover {
+    	background-color: $__white;
+		border-color: $__light__goose;
+		color: $__light__smokey-gray;
+    }
+    span {
+	    align-items: $__center;
+	    background-color: $__saffron;
+	    color: $__white;
+	    display: $__inline__flex;
+	    font-size: $__font__size__14;
+	    height: 22px;
+	    justify-content: $__center;
+	    margin-right: 3px;
+	    width: 22px;
+        border-radius: 50%;
+	}
+}
+.invoice-details {
+	float: $__right;
+	text-align: $__right;
+	@include respond-below(custom575) {
+		float: $__left;
+		text-align: $__left;
+	}
+	h4 {
+		color: $__light__smokey-gray;
+		font-size: $__font__size__16;
+		font-weight: $__regular;
+		margin-bottom: 1.875rem;
+		text-transform: $__uppercase;
+	}
+}
+.inv-badge {
+	color: $__white;
+	font-size: $__font__size__11;
+	justify-content: $__center;
+	min-width: 80px;
+	line-height: normal;
+}
+.inv-logo {
+    max-height: 80px;
+    height: $__auto;
+	max-height: 100px;
+	width: $__auto;
+}
+.invoice-container {
+    background-color: $__white;
+	border: 1px solid $__light-silver;
+    max-width: 900px;
+    @include margin-padding(0 auto 1.875rem, null);
+    @include margin-padding(null, 1.5rem);
+    @include respond-below(custom767) {
+    	@include margin-padding(null, 20px);
+    }
+}
+.invoice-payment-details {
+	& > li span {
+		float: $__right;
+		text-align: $__right;
+		@include respond-below(custom575) {
+			float: $__left;
+			text-align: $__left;
+		}
+	}
+}

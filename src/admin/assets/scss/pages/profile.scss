@@ -1,0 +1,113 @@
+.profile-header {
+    background-color: $__white;
+    border: 1px solid $__light-silver;
+    @include margin-padding(null, 1.5rem);
+    img {
+	    height: $__auto;
+	    max-width: 120px;
+	    width: 120px;
+	}
+}
+.profile-menu {
+	background-color: $__white;
+    border: 1px solid $__light-silver;
+    @include margin-padding(null, 0.9375rem 1.5rem);
+    .nav-tabs {
+    	&.nav-tabs-solid {
+    		background-color: $__transparent;
+    	}
+    }
+}
+.profile-tab-cont {
+	padding-top: 1.875rem;
+	@include respond-below(custom575) {
+		padding-top: 1.25rem;
+	}
+}
+.about-text {
+    max-width: 500px;
+}
+.skill-tags {
+	span {
+	    background-color: $__blue__gray;
+	    color: $__midnight__gray;
+	    display: $__inline__block;
+	    font-size: $__font__size__15;
+	    line-height: 22px;
+	    @include rounded(4px);
+	    @include margin-padding(2px 0, 5px 15px);
+	}
+}
+.edit-link {
+    color: $__midnight__gray;
+    font-size: $__font__size__16;
+    margin-top: 4px;
+    @include respond-below(custom767) {
+    	font-size: 0.875rem;
+		margin-top: 0;
+    }
+}
+.cal-icon {
+	position: $__relative;
+	width: $__full__width;
+	&:after {
+		color: $__ligt__carbon;
+		content: "\f073";
+		display: $__block;
+		font-family: "FontAwesome";
+	    font-size: $__font__size__15;
+	    margin: $__auto;
+	    @include position($__absolute, 10px, 15px, null, null);
+	}
+}
+.form-title {
+    width: $__full__width;
+    max-width: $__full__width;
+    font-size: $__font__size__20;
+	font-weight: $__medium;
+    line-height: $__inherit;
+    color: $__gray;
+    white-space: $__normal;
+    position: $__relative;
+    display: $__block;
+    @include margin-padding(auto auto 20px, 0);
+    &:before {
+	    content: "";
+	    height: 1px;
+	    background-color: rgba(0, 0, 0, 0.1);
+	    @include position($__absolute, 50%, 0px, null, 0);
+	}
+	span {
+	    background-color: $__white;
+	    display: $__inline__block;
+	    z-index: 2;
+	    position: $__relative;
+	    @include margin-padding(null, 0px 0.5rem 0 0);
+	}
+}
+.account-wrapper {
+	@include respond-below(custom575) {
+		@include margin-padding(null, 0.9375rem);
+	}
+}
+.profile-image {
+	@include respond-below(custom575) {
+	    flex: 0 0 100%;
+	    margin-bottom: 20px;
+	    text-align: $__center;
+    }
+}
+.profile-user-info {
+    @include respond-below(custom575) {
+	    text-align: $__center;
+    }
+}
+.profile-btn {
+	@include respond-below(custom767) {
+		flex: 0 0 100%;
+    	margin-top: 20px;
+    }
+    @include respond-below(custom575) {
+	    text-align: $__center;
+    }
+}

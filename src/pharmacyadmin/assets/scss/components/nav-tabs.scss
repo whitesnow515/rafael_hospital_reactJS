@@ -1,0 +1,167 @@
+.card-header-tabs {
+    border-bottom: 0;
+}
+.nav-tabs {
+	border-bottom: 1px solid $__light__candy;
+	& > li {
+		& > a {
+			margin-right: 0;
+			color: $__dark__gray;
+            border-radius: 0;
+			&:hover, &:focus {
+				border-color: $__transparent;
+				color: $__gray;
+			}
+		}
+	}
+	.nav-tabs-solid {
+		& > li {
+			& > a {
+				color: $__gray;
+			}
+		}
+		& > .active {
+			& > a, & > a:hover, & > a:focus {
+				background-color: $__primarycolor;
+				border-color: $__primarycolor;
+				color: $__white;
+			}
+		}
+	}
+	.nav-link {
+        border-radius: 0;
+		&:hover, &:focus {
+			background-color: $__cloud__gray;
+		    border-color: $__transparent;
+			color: $__gray;
+		}
+	}
+	&.nav-justified {
+		& > li {
+			& > a {
+				margin-bottom: 0;
+                border-radius: 0;
+				&:hover, &:focus {
+					border-bottom-color: $__light__goose;
+				}
+			}
+		}
+		&.nav-tabs-solid {
+			& > li {
+				& > a {
+					border-color: $__transparent;
+				}
+			}
+		}
+		&.nav-tabs-top {
+			border-bottom: 1px solid $__light__goose;
+			& > li {
+				& > a, & > a:hover, & > a:focus {
+					border-width: 2px 0 0 0;
+				}
+			}
+		}
+	}
+	&.nav-tabs-solid {
+		background-color: $__light__white;
+		border: 0;
+		& > li {
+			margin-bottom: 0;
+			& > a {
+				color: $__gray;
+				border-color: $__transparent;
+				&:hover, &:focus {
+					background-color: $__dark__light;
+				}
+				&.active, &.active:hover, &.active:focus {
+					background-color: $__primarycolor;
+					border-color: $__primarycolor;
+					color: $__white;
+				}
+			}
+		}
+		&.nav-tabs-rounded {
+            border-radius: 50px;
+			& > li {
+				& > a {
+                    border-radius: 50px;
+					&.active, &.active:hover, &.active:focus {
+                        border-radius: 50px;
+					}
+				}
+			}
+		}
+		& > .open:not(.active) {
+			& > a {
+				background-color: $__dark__light;
+				border-color: $__transparent;
+			}
+		}
+	}
+	&.nav-tabs-top {
+		& > li {
+			& > a, & > a:hover, & > a:focus {
+				border-width: 2px 0 0 0;
+			}
+			& > a.active, & > a.active:hover, & > a.active:focus {
+				border-top-color: $__primarycolor;
+			}
+			&.open {
+				& > a, & > a:hover, & > a:focus {
+					border-top-color: $__light__goose;
+				}
+			}
+			&+ li {
+				& > a {
+					margin-left: 1px;
+				}
+			}
+		}
+	}
+	&.nav-tabs-bottom {
+		& > li {
+			margin-bottom: -1px;
+			& > a {
+				&.active, &.active:hover, &.active:focus {
+					border-bottom-width: 2px;
+					border-color: $__transparent;
+					border-bottom-color: $__primarycolor;
+					background-color: $__transparent;
+					@include transition(none 0s ease 0s); 
+				} 
+			}
+		}
+	}
+}
+.card-header-tabs {
+    border-bottom: 0;
+}
+.tab-content {
+	padding-top: 20px;
+}
+.nav-tabs-justified {
+	& > li {
+		& > a {
+			margin-bottom: 0;
+            border-radius: 0;
+			&:hover, &:focus {
+				border-bottom-color: $__light__goose;
+			}
+		}
+	}
+	&.nav-tabs-solid {
+		& > li {
+			& > a {
+				border-color: $__transparent;
+			}
+		}
+	}
+	&.nav-tabs-top {
+		border-bottom: 1px solid $__light__goose;
+		& > li {
+			& > a, & > a:hover, & > a:focus {
+				border-width: 2px 0 0 0;
+			}
+		}
+	}
+}

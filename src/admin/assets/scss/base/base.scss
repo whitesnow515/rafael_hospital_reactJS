@@ -1,0 +1,149 @@
+html {
+	height: $__full__height;
+}
+body {
+	background-color: $__light-pale-blue; 
+	color: $__gray;
+	font-family: $__body__font__family;
+	font-size: 1rem;
+	height: $__full__height;
+	line-height: 1.5;
+	overflow-x: $__hidden;
+	@include respond-below(custom767) {
+    	font-size: $__font__size__15;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $__body__font__family;
+	margin-top: 0;
+}
+a {
+	@include transition(all 0.4s ease);
+	text-decoration: none;
+	&:hover, &:focus, &:active {
+		outline: $__none;
+		text-decoration: $__none;
+		color: $__primarycolor;
+	}
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+	box-shadow: 0 0 0px 1000px white inset !important;
+	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.form-control {
+    border: 1px solid $__light__goose;
+    box-shadow: $__none;
+    color: $__gray;
+    font-size: $__font__size__15;
+    height: 40px;
+    &:focus {
+		border-color: $__primarycolor;
+		box-shadow: $__none;
+		outline: 0 $__none;
+	}
+	&.form-control-sm {
+		height: calc(1.5em + .5rem + 2px);
+	}
+	&.form-control-lg {
+		height: calc(1.5em + 1rem + 2px);
+	}
+}
+a {
+	color: $__cyan__blue;
+}
+input, button {
+	@include transition(all 0.4s ease);
+	&:focus, &:hover {
+		outline: $__none;
+	}
+}
+input {
+	&[type="file"] {
+		height: $__auto;
+    	min-height: calc(1.5em + .75rem + 2px);
+	}
+	&[type=text], &[type=password] {
+		@include appearance($__none);
+	}
+}
+textarea {
+	&.form-control {
+		resize: vertical;
+	}
+}
+.navbar-nav {
+	& > li {
+		float: $__left;
+	}
+}
+.form-group {
+	margin-bottom: 1.25rem;
+}
+.input-group {
+	.form-control {
+		height: 40px;
+	}
+}
+.nav {
+	.open {
+		a, a:hover, a:focus {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: $__normal;
+	font-style: $__normal;
+	font-size: $__font__size__24;
+	display: $__inline__block;
+	line-height: 1;
+	text-transform: $__none;
+	letter-spacing: $__normal;
+	word-wrap: $__normal;
+	white-space: $__nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'liga';
+}
+.font-weight-600 {
+	font-weight: $__semibold;
+}
+h1, .h1 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__32;
+	}
+}
+h2, .h2 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__28;
+	}
+}
+h3, .h3 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__24;
+	}
+}
+h4, .h4 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__18;
+	}
+}
+h5, .h5 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__16;
+	}
+}
+h6, .h6 {
+	@include respond-below(custom767) {
+		font-size: $__font__size__14;
+	}
+}

@@ -1,0 +1,155 @@
+.login-body {
+    display: $__table;
+    height: $__full_height_window;
+    min-height: 100vh;
+}
+.login-wrapper {
+	width: $__full__width;
+	height: $__full__height;
+	display: table-cell;
+	vertical-align: $__middle;
+	.loginbox {
+	    background-color: $__white;
+		display: $__flex;
+	    max-width: 800px;
+	    min-height: 500px;
+	    width: $__full__width;
+        border-radius: 6px;
+	    @include margin-padding(1.875rem $__auto, null);
+	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	    @include respond-below(custom767) {
+	    	max-width: 450px;
+    		min-height: $__unset;
+	    }
+	    .login-left {
+		    align-items: $__center;
+		    flex-direction: column;
+		    width: 400px;
+		    display: $__flex;
+            border-radius: 6px 0 0 6px;
+		    @extend %justify-content-center;
+		    background: linear-gradient(180deg, $__light__blue__jey, $__primarycolor);
+		    @include margin-padding(null, 80px);
+		    @include respond-below(custom991) {
+    			width: $__half__width;
+    			@include margin-padding(null, 80px 50px);
+		    }
+		    @include respond-below(custom767) {
+    			display: $__none;
+		    }
+		}
+		.login-right {
+		    padding: 40px;
+		    width: 400px;
+		    @extend %flex-align-center;
+		    @include respond-below(custom991) {
+    			width: $__half__width;
+    			@include margin-padding(null, 50px);
+		    }
+		    @include respond-below(custom767) {
+    			float: $__none;
+    			width: $__full__width;
+				@include margin-padding(null, 1.875rem);
+		    }
+		    .login-right-wrap {
+			    max-width: 100%;
+			    flex: 0 0 100%;
+			}
+			h1 {
+			    font-size: $__font__size__26;
+			    font-weight: $__medium;
+			    margin-bottom: 5px;
+			    text-align: $__center;
+			    @include respond-below(custom767) {
+			    	font-size: $__font__size__22;
+			    }
+			}
+			.forgotpass {
+				a {
+					color: $__ash__gray;
+					&:hover {
+						color: $__gray;
+						text-decoration: $__underline;
+					}
+				}
+			}
+			.dont-have {
+				color: $__ash__gray;
+				margin-top: 1.875rem;
+				a {
+					color: $__gray;
+					&:hover {
+						text-decoration: $__underline;
+					}
+				}
+			}
+		}
+	}
+}
+.account-subtitle {
+    color: $__taupe__black;
+    font-size: $__font__size__17;
+    margin-bottom: 1.875rem;
+    text-align: $__center;
+}
+.social-login {
+	text-align: $__center;
+	& > span {
+		color: $__ash__gray;
+		margin-right: 8px;
+	}
+	& > a {
+		background-color: $__goose-gray;
+		color: $__white;
+		display: $__inline__block;
+		font-size: $__font__size__18;
+		height: 32px;
+		line-height: 32px;
+		margin-right: 6px;
+		text-align: $__center;
+		width: 32px;
+        border-radius: 4px;
+	}
+	& > a {
+		&:last-child {
+			margin-right: 0;
+		}
+		&.facebook {
+			background-color: $__windows__blue;
+		}
+		&.google {
+			background-color: $__tomred;
+		}
+	}
+}
+.login-or {
+	color: $__ash__gray;
+	position: $__relative;
+	margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.or-line {
+	background-color: $__light__cloud;
+	height: 1px;
+	display: $__block;
+	@include margin-padding(0 $__auto, null);
+}
+.span-or {
+	background-color: $__white;
+	display: $__block;
+	margin-left: -20px;
+	text-align: $__center;
+	text-transform: $__uppercase;
+	width: 42px;
+	@include position($__absolute, 0, null, null, 50%);
+}
+.lock-user {
+    margin-bottom: 20px;
+    text-align: $__center;
+    img {
+	    margin-bottom: 15px;
+	    width: 100px;
+	}
+}

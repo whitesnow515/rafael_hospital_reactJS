@@ -1,0 +1,60 @@
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+    display: block;
+}
+
+.best-packages-section .slick-prev,
+.best-packages-section .slick-next {
+    display: none !important;
+}
+
+.test-slider-card .slick-prev {
+    display: none;
+}
+
+.popular-test-section .slick-list .slick-track .slick-slide div {
+    margin-right: 20px;
+}
+
+.about-us-section-fifteen.client-review-twelve .slick-slider {
+    position: static;
+}
+
+.slick-slider.best-package-slider.owl-carousel.slick-initialized .slick-dots li.slick-active button {
+    background: #0092E4;
+    border-radius: 10px !important;
+
+}
+
+.best-package-slider .slick-list .slick-track .slick-slide div {
+    margin-right: 20px;
+}
+
+.slick-slider.best-package-slider.owl-carousel.slick-initialized .slick-dots li button {
+    width: 32px;
+    height: 6px;
+}
+
+.banner-sec-twelve .css-13cymwt-control {
+    border-width: 0px !important;
+    padding-left: 10px 
+}
+
+.popular-test-section .slick-prev ,
+.popular-test-section .slick-next {
+    display: none !important;
+}
+
+.banner-sec-twelve .input-box-twelve .input-block:nth-child(2):before {
+    left: 2px;
+    top: 7px;
+}
+.css-1u9des2-indicatorSeparator {
+    display: none !important;
+}
+.home-pg-twelve.main-wrapper {
+    font-family: "Inter", sans-serif;
+}
+.swiper.swiper-slider-banner {
+    overflow: visible;
+}

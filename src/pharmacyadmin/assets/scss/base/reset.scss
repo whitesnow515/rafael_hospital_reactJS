@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+
+/* HTML5 display-role reset for older browsers */
+* {
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: $__block; 
+}
+body {
+  line-height: 1; 
+}
+ol, ul {
+  list-style: $__none; 
+}
+blockquote, q {
+  quotes: $__none; 
+}
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: $__none; 
+  } 
+}
+q {
+  &:before, &:after {
+    content: '';
+    content: $__none; 
+  } 
+}
+table {
+  border-collapse: $__collapse;
+  border-spacing: 0; 
+}
