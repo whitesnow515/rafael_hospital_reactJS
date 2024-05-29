@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 import Header from "../../header";
 
 const Review = (props) => {
+  
+
   return (
     <>
       <Header {...props} />
-      {/* Breadcrumb */}
       <div className="breadcrumb-bar-two">
         <div className="container">
           <div className="row align-items-center inner-banner">
@@ -30,7 +31,6 @@ const Review = (props) => {
           </div>
         </div>
       </div>
-      {/* /Breadcrumb */}
 
       <div className="content">
         <div className="container-fluid">

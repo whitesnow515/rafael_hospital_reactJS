@@ -1,0 +1,13 @@
+.img-responsive {
+    position: relative;
+    top: -83px;
+    left: 45px;
+}
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .img-responsive {
+        left: 0px;
+    }
+}
+ 
+  

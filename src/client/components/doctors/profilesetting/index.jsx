@@ -18,6 +18,8 @@ import { useDropzone } from "react-dropzone";
 import { useCallback } from "react";
 
 const ProfileSetting = (props) => {
+  
+  
   const [dropzone, setDropzone] = useState({ files: [] });
 
   const MyDropzone = ({ onDrop }) => {
@@ -45,16 +47,10 @@ const ProfileSetting = (props) => {
     },
     [dropzone]
   );
-  // const [gender, setGender] = useState([
-  //   { id: 1, text: "Select" },
-  //   { id: 2, text: "Male" },
-  //   { id: 3, text: "Female" },
-  // ]);
 
   return (
     <div>
       <Header {...props} />
-      {/* Breadcrumb */}
       <div className="breadcrumb-bar-two">
         <div className="container">
           <div className="row align-items-center inner-banner">

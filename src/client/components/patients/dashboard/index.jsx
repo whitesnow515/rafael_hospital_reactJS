@@ -30,14 +30,7 @@ import Header from "../../header.jsx";
 
 const Dashboard = (props) => {
   const [count, setCount] = useState(1, 2, 3, 4);
-
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     key: 1,
-  //   };
-  //   this.handleSelect = this.handleSelect.bind(this);
-  // }
+  
 
   return (
     <>

@@ -7,6 +7,7 @@ import Header from "../../header";
 
 const ScheduleTiming = (props) => {
   const [addListEmp, setAddListEmp] = useState([""]);
+  
 
   const handelAddEmp = () => {
     setAddListEmp([...addListEmp, " "]);
@@ -44,10 +45,10 @@ const ScheduleTiming = (props) => {
       </div>
       {/* /Breadcrumb */}
       <div className="content">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              <DoctorSidebar />
+                <DoctorSidebar />
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">
               <div className="row">

@@ -14,11 +14,7 @@ import Footer from "../../footer";
 import Tablerecords from "./tablerecords.jsx";
 
 const MedicalRecords = (props) => {
-  // const [ setDate] = useState(new Date());
-
-  // const handleChange = (date) => {
-  //     setDate(date)
-  // }
+  
 
   return (
     <div>
@@ -47,7 +43,7 @@ const MedicalRecords = (props) => {
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
               <StickyBox offsetTop={20} offsetBottom={20}>
-                <DashboardSidebar />{" "}
+                <DashboardSidebar />
               </StickyBox>
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">

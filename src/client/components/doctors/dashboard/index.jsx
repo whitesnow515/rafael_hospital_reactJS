@@ -9,7 +9,9 @@ import Breadcrumbs from "../../breadcrumb";
 import Header from "../../header";
 import UpcomingTab from "./upcomimgtab";
 import AppointmentTab from "./appoitmenttab";
+import './styles.css';
 const DoctorDashboard = (props) => {
+
   return (
     <div>
       <Header {...props} />
@@ -49,13 +51,8 @@ const DoctorDashboard = (props) => {
                               <div className="indicator-volume">
                                 <img
                                   src={Icon01}
-                                  className="img-fluid "
+                                  className="img-fluid img-responsive"
                                   alt="Patient"
-                                  style={{
-                                    position: "relative",
-                                    top: "-83px",
-                                    left: "45px",
-                                  }}
                                 />
                               </div>
                             </ProgressBar>
@@ -90,13 +87,8 @@ const DoctorDashboard = (props) => {
                               <div className="indicator-volume">
                                 <img
                                   src={Icon02}
-                                  className="img-fluid"
+                                  className="img-fluid img-responsive"
                                   alt="Patient"
-                                  style={{
-                                    position: "relative",
-                                    top: "-83px",
-                                    left: "45px",
-                                  }}
                                 />
                               </div>
                             </ProgressBar>
@@ -131,13 +123,8 @@ const DoctorDashboard = (props) => {
                               <div className="indicator-volume">
                                 <img
                                   src={Icon03}
-                                  className="img-fluid"
+                                  className="img-fluid img-responsive"
                                   alt="Patient"
-                                  style={{
-                                    position: "relative",
-                                    top: "-83px",
-                                    left: "45px",
-                                  }}
                                 />
                               </div>
                             </ProgressBar>

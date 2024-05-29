@@ -1,9 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { withRouter } from "react-router-dom";
+import PropTypes from 'prop-types';
 
-const homeSearch = () => {
-  const config = "/react/template";
+const homeSearch = (props) => {
+  const handleSubmit = () => {
+    event.preventDefault();
+    props.history.push(`/patient/search-doctor`);
+  }
   return (
     <section className="section section-search">
       <div className="container-fluid">
@@ -17,7 +22,7 @@ const homeSearch = () => {
           </div>
 
           <div className="search-box">
-            <form action={`${config}/patient/search-doctor`}>
+            <form>
               <div className="form-group search-location">
                 <input
                   type="text"
@@ -36,7 +41,7 @@ const homeSearch = () => {
                   Ex : Dental or Sugar Check up etc
                 </span>
               </div>
-              <button type="submit" className="btn btn-primary search-btn mt-0">
+              <button type="submit" className="btn btn-primary search-btn mt-0" onClick={handleSubmit}>
                 <FontAwesomeIcon icon={faSearch} /> <span>Search</span>
               </button>
             </form>
@@ -47,4 +52,10 @@ const homeSearch = () => {
   );
 };
 
-export default homeSearch;
+homeSearch.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
+export default withRouter(homeSearch);

@@ -7,6 +7,8 @@ import Footer from "../../../footer.jsx";
 import Header from "../../../header.jsx";
 
 const Profile = (props) => {
+  
+
   return (
     <div>
       <Header {...props} />

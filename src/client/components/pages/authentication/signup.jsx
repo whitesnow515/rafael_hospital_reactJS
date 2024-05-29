@@ -134,11 +134,11 @@ const authRouter = (props) => {
                       Login
                     </Link>
                   </div> */}
-                  <div className="login-title">
+                  <div className="login-title text-center">
                     <h3>{props.type === "signup" ? "Sign up": "Sign in"}</h3>
                   </div>
                   <div className="signup-option-btns">
-                    <Link to={`${props.type === "signup" ? "/doctor/register": "/login"}`} className="signup-btn-info">
+                    <Link to={`${props.type === "signup" ? "/doctor/register": "/doctor/login"}`} className="signup-btn-info">
                       <div className="signup-info">
                         <div className="signup-icon">
                           <img src={doctorIcon} alt="" />
@@ -153,7 +153,7 @@ const authRouter = (props) => {
                       </div>
                     </Link>
                     <Link
-                     to={`${props.type === "signup" ? "/patient/register": "/login"}`}
+                     to={`${props.type === "signup" ? "/patient/register": "/patient/login"}`}
                       className="signup-btn-info"
                     >
                       <div className="signup-info">

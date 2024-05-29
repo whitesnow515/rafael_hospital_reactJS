@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 // import Header from "./client/components/header.jsx";
 // import Footer from "./client/components/footer.jsx";
 // import TopHeader from "./client/components/topheader.jsx";
-import LoginContainer from "./client/components/login/login.jsx";
+import LoginContainer from "./client/components/login/patient.jsx";
 import Register from "./client/components/register/register.jsx";
 import ForgotPassword from "./client/components/forgot-password";
 import Home from "./client/components/home/index";
@@ -156,7 +156,7 @@ import Loginemail from "./client/components/home/loginemail.jsx";
 import HomecareHome from "./client/components/home/HomecareHome/index.jsx";
 import HomeTwelve from "./client/components/home/home12/hometwelve.jsx";
 const AppContainer = function (props) {
-  // const config = "/react/template/";
+  const config = "/react/template/";
   if (props) {
     const url = props.location.pathname.split("/")[1];
 
@@ -341,7 +341,6 @@ const AppContainer = function (props) {
               <Route path="/pages/blank-page" exact component={BlankPage} />
               <Route path="/pages/calendar" exact component={Calendar} />
               <Route path="/pages/invoice" exact component={Invoice} />
-              <Route path="/doctor/invoice" exact component={Invoice} />
               <Route path="/pages/invoice-view" exact component={InvoiceView} />
               <Route path="/pages/aboutus" exact component={Aboutus} />
               <Route path="/pages/contactus" exact component={Contactus} />
@@ -472,6 +471,7 @@ const AppContainer = function (props) {
                 component={ProfileSetting}
               />
               <Route path="/doctor/review" exact component={Review} />
+              <Route path="/doctor/invoice" exact component={Invoice} />
               <Route
                 path="/doctor/doctor-register"
                 exact

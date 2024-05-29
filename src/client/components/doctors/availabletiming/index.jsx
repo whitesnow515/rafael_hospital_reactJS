@@ -1,15 +1,16 @@
 import React from "react";
 // import { IMG01 } from "./img";
 import { Link } from "react-router-dom";
-import Header from "../../patients/dashboard/header";
+import Header from "../../header";
 import Footer from "../../footer";
 import DoctorSidebar from "../sidebar";
 
 const AvailableTiming = (props) => {
+  
+
   return (
-    <>
+    <div>
       <Header {...props} />
-      {/* Breadcrumb */}
       <div className="breadcrumb-bar-two">
         <div className="container">
           <div className="row align-items-center inner-banner">
@@ -29,15 +30,12 @@ const AvailableTiming = (props) => {
           </div>
         </div>
       </div>
-      {/* /Breadcrumb */}
-      {/* Page Content */}
+
       <div className="content">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              {/* Profile Sidebar */}
               <DoctorSidebar />
-              {/* /Profile Sidebar */}
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">
               <div className="row">
@@ -584,7 +582,7 @@ const AvailableTiming = (props) => {
       </div>
       {/* /Page Content */}
       <Footer {...props} />
-    </>
+    </div>
   );
 };
 

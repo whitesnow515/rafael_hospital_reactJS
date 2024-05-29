@@ -1,9 +1,11 @@
 import React from "react";
-import DashboardSidebar from "../sidebar/index";
+import DoctorSidebar from "../sidebar/index";
 import { Link } from "react-router-dom";
 import Header from "../../header";
 
 const Password = (props) => {
+  
+
   return (
     <div>
       <Header {...props} />
@@ -32,7 +34,7 @@ const Password = (props) => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              <DashboardSidebar />
+              <DoctorSidebar />
             </div>
 
             <div className="col-md-7 col-lg-8 col-xl-9">

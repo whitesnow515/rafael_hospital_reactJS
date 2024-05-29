@@ -28,7 +28,7 @@ import Profile from "./components/profile";
 import ProductList from "./components/productlist/index.jsx";
 import ReportInvoice from "./components/report/ReportInvoice.jsx";
 import LatestCustomer from "./components/dashboard/LastestCustomer.jsx";
-import PharmacyLogin from "./components/login/index.jsx";
+import PharmacyLogin from "./components/login/doctor.jsx";
 import ParmacyForgotPassword from "./components/forgotPassword/index.jsx";
 import ParmacyRegsiter from "./components/register/index..jsx";
 

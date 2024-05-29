@@ -1,15 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+import PropTypes from 'prop-types';
 import IMG01 from "../../../assets/images/patient2.jpg";
 import Header from "../../header";
 import Footer from "../../footer";
 import StickyBox from "react-sticky-box";
 
 const Checkout = (props) => {
-  const config = "/react/template";
-  // const handleChange = () => {
-  //   props.history.push("/patient/booking-success");
-  // };
+  // const config = "/react/template";
+  const handleChange = () => {
+    event.preventDefault();
+    props.history.push(`/patient/booking-success`);
+  };
 
   return (
     <div>
@@ -45,7 +47,7 @@ const Checkout = (props) => {
               <div className="card">
                 <div className="card-body">
                   {/* Checkout Form */}
-                  <form action={`${config}/patient/booking-success`}>
+                  <form>
                     {/* Personal Information */}
                     <div className="info-widget">
                       <h4 className="card-title">Personal Information</h4>
@@ -173,6 +175,7 @@ const Checkout = (props) => {
                         <button
                           type="submit"
                           className="btn btn-primary submit-btn"
+                          onClick={handleChange}
                         >
                           Confirm and Pay
                         </button>
@@ -270,4 +273,10 @@ const Checkout = (props) => {
   );
 };
 
-export default Checkout;
+Checkout.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
+export default withRouter(Checkout);

@@ -20,6 +20,7 @@ import Header from "../../header";
 
 const Appointments = (props) => {
   const [show, setshow] = useState();
+  
 
   // const constructor = (props) => {
   //   show = {
@@ -60,12 +61,12 @@ const Appointments = (props) => {
       </div>
       {/* /Breadcrumb */}
       <div className="content">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              <StickyBox offsetTop={50} offsetBottom={20}>
+              <StickyBox offsetTop={20} offsetBottom={20}>
                 <div className="appointments">
-                  <DoctorSidebar />
+                <DoctorSidebar />
                 </div>
               </StickyBox>
             </div>

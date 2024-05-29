@@ -12,12 +12,14 @@ import {
   IMG010,
   IMG011,
 } from "./img";
-import InvoiceSidebar from "../sidebar.jsx";
+import DoctorSidebar from "../../../doctors/sidebar";
 import Footer from "../../../footer";
 import Header from "../../../header";
 import StickyBox from "react-sticky-box";
 
 const Invoices = (props) => {
+  
+  
   return (
     <div>
       <Header {...props} />
@@ -47,12 +49,10 @@ const Invoices = (props) => {
 
       {/* Page Content */}
       <div className="content">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              {/* Profile Sidebar */}
-              <InvoiceSidebar />
-              {/* /Profile Sidebar */}
+                <DoctorSidebar />
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">
               <StickyBox>

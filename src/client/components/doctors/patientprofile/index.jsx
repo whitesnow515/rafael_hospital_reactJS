@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PatientSidebar from "../patienttsidebar";
 import { Link } from "react-router-dom";
 // import { Tab, Tabs, Modal } from "react-bootstrap";
 import {
@@ -15,13 +14,13 @@ import {
   IMG10,
 } from "./img";
 import Footer from "../../footer";
-import StickyBox from "react-sticky-box";
 import Header from "../../header";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import DoctorSidebar from "../sidebar";
 
 const PatientProfile = (props) => {
-  // const [ setsow] = useState();
+  
 
   const [selectedDate, setSelectedDate] = useState(null);
 
@@ -29,25 +28,9 @@ const PatientProfile = (props) => {
     setSelectedDate(date);
   };
 
-  // const handleSelect = (key) => {
-  //   setsow({ key });
-  // };
-  // const handleClose = () => {
-  //   setsow({
-  //     show: false,
-  //   });
-  // };
-
-  // const handleShow = () => {
-  //   setsow({
-  //     show: true,
-  //   });
-  // };
-
   return (
     <div>
       <Header {...props} />
-      {/* Breadcrumb */}
       <div className="breadcrumb-bar-two">
         <div className="container">
           <div className="row align-items-center inner-banner">
@@ -69,12 +52,10 @@ const PatientProfile = (props) => {
       </div>
       {/* /Breadcrumb */}
       <div className="content">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar dct-dashbd-lft">
-              <StickyBox offsetTop={20} offsetBottom={20}>
-                <PatientSidebar />
-              </StickyBox>
+              <DoctorSidebar />
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9 dct-appoinment">
               <div className="card">

@@ -8,6 +8,7 @@ import Footer from "../../footer";
 
 const MedicalDetails = (props) => {
   const [show, setShow] = useState(false);
+  
 
   return (
     <div>

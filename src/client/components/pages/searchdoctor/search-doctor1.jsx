@@ -64,17 +64,20 @@ const SearchDoctor = (props) => {
                   <div className="card-body">
                     <div className="filter-widget">
                       <div className="cal-icon">
-                        {/* <input
+                        <input
                           type="text"
                           className="form-control datetimepicker"
                           placeholder="Select Date"
-                        /> */}
-                        <DatePicker
+                          selected={selectedDate}
+                          onChange={handleDateChange}
+                        />
+                        {/* <DatePicker
                           className="form-control datetimepicker"
+                          // style={{ width }}
                           selected={selectedDate}
                           onChange={handleDateChange}
                           placeholderText="Select Date"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className="filter-widget">

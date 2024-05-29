@@ -18,6 +18,8 @@ import Footer from "../../../footer";
 import Header from "../../../header.jsx";
 
 const Favourites = (props) => {
+  
+
   return (
     <div>
       <Header {...props} />

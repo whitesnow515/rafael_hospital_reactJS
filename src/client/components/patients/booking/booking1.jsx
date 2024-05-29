@@ -13,7 +13,7 @@ const Booking = (props) => {
       <div className="breadcrumb-bar-two">
         <div className="container">
           <div className="row align-items-center inner-banner">
-            <div className="col-md-12 col-12 text-center">
+            <div className="col-sm-12 col-md-12 col-12 text-center">
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <h2 className="breadcrumb-title">Booking</h2>
                 <ol className="breadcrumb">
@@ -106,10 +106,9 @@ const Booking = (props) => {
                       }}
                     >
                       <input
-                        className="form-control col-4 input-range"
+                        className="form-control"
                         type="text"
-                        // custom="input-range"
-                        style={{ width: 280, position: "relative", left: 250 }}
+                        style={{ position: "relative" }}
                       />
                     </DateRangePicker>
                   </div>

@@ -25,7 +25,8 @@ import Patientregisterstepfive from "./client/components/register/patientregiste
 import AppUniversal from "./admin/app-universal";
 import PharmacyadminApp from "./pharmacyadmin/app-universal";
 
-import LoginContainer from "./client/components/login/login.jsx";
+import DoctorLogin from "./client/components/login/doctor.jsx";
+import PatientLogin from "./client/components/login/patient.jsx";
 // import Register from "./client/components/register/register.jsx";
 // import ForgotPassword from "./client/components/forgot-password";
 // import Home9 from "./client/components/home/home9";
@@ -411,7 +412,8 @@ const AppContainer = function (props) {
                 component={DoctorPassword}
               />
               <Route path="/doctor/chat-doctor" exact component={DoctorChat} />
-              <Route path="/login" exact component={LoginContainer} />
+              <Route path="/doctor/login" exact component={DoctorLogin} />
+              <Route path="/patient/login" exact component={PatientLogin} />
 
 
               {/* <Route path="/patient/doctor-grid" exact component={DoctorGrid} />
@@ -504,6 +506,7 @@ const AppContainer = function (props) {
                 exact
                 component={PatientChat}
               />
+              <Route path="/doctor/invoice" exact component={Invoice} />
               {/* <Route
                 path="/patient/search-doctor2"
                 exact
@@ -512,7 +515,6 @@ const AppContainer = function (props) {
               <Route path="/pages/component" exact component={Components} />
               <Route path="/pages/blank-page" exact component={BlankPage} />
               <Route path="/pages/calendar" exact component={Calendar} />
-              <Route path="/doctor/invoice" exact component={Invoice} />
               <Route path="/pages/invoice-view" exact component={InvoiceView} />
               <Route path="/pages/aboutus" exact component={Aboutus} />
               <Route path="/pages/contactus" exact component={Contactus} />
